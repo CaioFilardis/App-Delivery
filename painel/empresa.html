@@ -51,7 +51,7 @@
                     <i class="fas fa-building"></i> Empresa
                 </a>
 
-                <a href="#" class="menu-item">
+                <a href="./relatorio.html" class="menu-item">
                     <i class="fas fa-chart-line"></i> Relatório
                 </a>
 
@@ -100,10 +100,10 @@
                                 <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-info-circle"></i> Sobre a empresa
                                 </a>
-                                <a href="#" class="btn btn-white btn-sm active">
+                                <a href="#" class="btn btn-white btn-sm">
                                     <i class="fas fa-map-marked-alt"></i> Endereço físico
                                 </a>
-                                <a href="#" class="btn btn-white btn-sm">
+                                <a href="#" class="btn btn-white btn-sm active">
                                     <i class="fas fa-clock"></i> Horário de funcionamento
                                 </a>
 
@@ -145,7 +145,7 @@
                             </div>
                         </div><!-- sobre -->
 
-                        <div class="col-12 mt-5" id="endereco">
+                        <div class="col-12 mt-5 hidden" id="endereco">
                             <div class="row">
                                 <!-- cep -->
                                 <div class="col-3">
@@ -242,16 +242,100 @@
                             </a>
                         </div><!-- endereco -->
 
-                        <div class="col-12 mt-5 hidden" id="horario">
-                            <p>teste</p>
+                        <div class="col-12 mt-5" id="horario">
+                            
+                            <p class="title-categoria mb-0 mb-4">
+                                <b>Configure o horário em que sua loja estará recebendo pedidos para delivery ou retirada.</b>
+                            </p>
+
+                            <div class="row horario mb-4">
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <p class="title-categoria mb-0"><b>De: </b></p>
+                                        <select class="form-control">
+                                            <option value="-1">...</option>
+                                            <option value="0">Domingo</option>
+                                            <option value="1">Segunda</option>
+                                            <option value="2">Terça</option>
+                                            <option value="3">Quarta</option>
+                                            <option value="4">Quinta</option>
+                                            <option value="5">Sexta</option>
+                                            <option value="6">Sábado</option>
+                                        </select>
+                                    </div>
+                                </div><!-- col-2 -->
+
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <p class="title-categoria mb-0"><b>até: </b></p>
+                                        <select class="form-control">
+                                            <option value="-1">...</option>
+                                            <option value="0">Domingo</option>
+                                            <option value="1">Segunda</option>
+                                            <option value="2">Terça</option>
+                                            <option value="3">Quarta</option>
+                                            <option value="4">Quinta</option>
+                                            <option value="5">Sexta</option>
+                                            <option value="6">Sábado</option>
+                                        </select>
+                                    </div><!-- form-group -->
+                                </div><!-- col-2 -->
+
+                                <div class="col-7">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <p class="title-categoria mb-0"><b>das: </b></p>
+                                                <input type="time" class="form-control">
+                                            </div>
+                                        </div><!-- col-3 -->
+
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <p class="title-categoria mb-0"><b>até às: </b></p>
+                                                <input type="time" class="form-control">
+                                            </div><!-- form-group -->
+                                        </div><!-- col-3 -->
+
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <p class="title-categoria mb-0"><b>e das: </b></p>
+                                                <input type="time" class="form-control">
+                                            </div><!-- form-group -->
+                                        </div><!-- col-3 -->
+
+                                        <div class="col-3">
+                                            <div class="form-group">
+                                                <p class="title-categoria mb-0"><b>até às: </b></p>
+                                                <input type="time" class="form-control">
+                                            </div><!-- form-group -->
+                                        </div><!-- col-3 -->
+                                    </div><!-- row -->
+                                </div><!-- col-7 -->
+
+                                <div class="col-1">
+                                    <a href="#" class="btn btn-red btn-sm">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </a>
+                                </div><!-- col-1 -->
+                            </div><!-- row -->
+
+                            <div class="card card-select mt-5">
+                                <div class="infos-produto-opcional">
+                                    <p class="mb-0 color-primary">
+                                        <i class="fas fa-plus-circle"></i>&nbsp; Adicionar novo horário
+                                    </p>
+                                </div><!-- infos-produto-opcional -->
+                            </div><!-- card card-select -->
+                            <a href="" class="btn btn-yellow btn-sm mt-5">
+                                <i class="fas fa-check"></i>&nbsp; Salvar Alterações
+                            </a>
                         </div><!-- horario -->
 
                     </div><!-- row -->
                 </div><!-- container -->
             </div><!-- conteudo-inner -->
-
         </div><!-- conteudo -->
-
     </section><!-- bg-menu -->
 
 
